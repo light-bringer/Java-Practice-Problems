@@ -12,16 +12,13 @@ import java.util.Scanner;
  */
 
 class Difference {
-  	private int[] elements;
+  	@SuppressWarnings("unused")
+	private int[] elements;
   	public int maximumDifference;
   	
   	
   	public Difference(int[] a) {
   		this.elements = a;
-  		HourGlass.display(elements);
-  		HourGlass.display(a);
-  		
-  		
   	}
 
 

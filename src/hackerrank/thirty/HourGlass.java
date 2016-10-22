@@ -37,16 +37,22 @@ public class HourGlass {
         }
         in.close();
         int sum;
-        int max = -500;
+       int max = Integer.MIN_VALUE;
         ArrayList<int[]> glasslist = new ArrayList<int[]>();
-        for(int i=0;i<4; i++) {
-        	for(int j=0; j<4; j++) {
-        		int[] hourglass = {arr[i][j], arr[i][j+1], arr[i][j+2], arr[i+1][j+1], arr[j+2][i], arr[j+2][i+1], arr[j+2][i+2]};
-        		glasslist.add(hourglass);
-        		sum = sum(hourglass);
-        		System.out.println(sum);
-				if(sum>max)
-        			max=sum;
+        for(int i=0;i<6; i++) {
+        	for(int j=0; j<6; j++) {
+        		if((i+2<6) && (j+2<6))
+        		{
+        			int[] hourglass = {arr[i][j], arr[i][j+1], arr[i][j+2], arr[i+1][j+1], arr[i+2][j], arr[i+2][j+1], arr[i+2][j+2]};
+            		glasslist.add(hourglass);
+            		sum = sum(hourglass);
+            		//System.out.println(sum);
+    				if(sum>max)
+            			max=sum;
+       
+        		}
+        		
+        	
         	}
         	
         }
