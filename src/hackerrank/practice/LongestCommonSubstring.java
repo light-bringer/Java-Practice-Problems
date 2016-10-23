@@ -44,7 +44,17 @@ public class LongestCommonSubstring {
 	    return result;
 	}
 	
-	 
+	
+	public static int sumstring(String s) {
+		int sum  = 0;
+		//for()
+		
+		
+		return sum;
+	}
+	
+	
+	
 	public static void display(int[][] table, int m , int n) {
 		for(int i=0; i<m; i++) {
 			for(int j=0; j<n; j++)
