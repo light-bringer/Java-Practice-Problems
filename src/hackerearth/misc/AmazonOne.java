@@ -146,7 +146,7 @@ public class AmazonOne {
 	        return s.charAt(s.length()-1)+s.substring(0, s.length()-1);
 	    }
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Reader s=new Reader();
 		int n = s.nextInt();
