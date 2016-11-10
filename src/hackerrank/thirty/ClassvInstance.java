@@ -52,6 +52,7 @@ public class ClassvInstance {
 			}
 			p.amIOld();
 			System.out.println();
+			System.out.println();
         }
 		sc.close();
     }
